@@ -11,8 +11,9 @@ body{text-align:center;}
 .wrap{margin: 0 auto;width:980px;text-align:left;}
 .mt40{margin-top:40px;}
 .tc{text-align:center;}
-.table{width:100%;border:2px solid #5cacee;border-collapse:collapse;text-align:left;}
-.table thead td,.table tfoot td{color:#FFF;font-weight:bold;background-color:#5cacee;}
+.table{width:100%;border:2px solid #5cacee;border-top-width:0;border-collapse:collapse;text-align:left;}
+.table thead td{color:#FFF;font-weight:bold;background-color:#5cacee;border-right:2px solid #FFF;}
+.table thead td.last-col{border-right:2px solid #5cacee;}
 .table td{border-bottom:1px solid #5cacee;border-left:0px solid #5cacee;height:22px;font-size:12px;padding-left:10px;}
 .table-striped tbody > tr:nth-child(odd) > td, .table-striped tbody > tr:nth-child(odd) > th {background-color: #f9f9f9;}
 .table-head{width:400px;margin:10px auto 0;border-width:0;border-collapse:separate;border-spacing:4px;}
@@ -52,9 +53,9 @@ body{text-align:center;}
 <table class="table table-striped mt40">
 <thead>
 <tr>
-<td width="40%">Name</td>
-<td width="30%">Answered Count</td>
-<td width="30%">No Answer Count</td>
+<td>Name</td>
+<td>Answered Count</td>
+<td class="last-col">No Answer Count</td>
 </tr>
 </thead>
 <tbody>
@@ -74,11 +75,11 @@ body{text-align:center;}
 <table class="table table-striped mt40">
 <thead>
 <tr>
-<td width="30%">No.</td>
-<td width="20%">Question Type</td>
-<td width="10%">Your Answer</td>
-<td width="10%">Teacher's Answer</td>
-<td width="15%">Result</td>
+<td>No.</td>
+<td>Question Type</td>
+<td>Your Answer</td>
+<td>Teacher's Answer</td>
+<td class="last-col">Result</td>
 </tr>
 </thead>
 <tbody>
